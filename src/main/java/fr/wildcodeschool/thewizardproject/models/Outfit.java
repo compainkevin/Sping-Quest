@@ -1,7 +1,11 @@
 package fr.wildcodeschool.thewizardproject.models;
 
-public class Outfit {
+import org.springframework.stereotype.Component;
+
+@Component
+public class Outfit implements OutfitInterface{
 	
+	@Override
 	public String chooseDress() {
 		return "The wizard's dress is blue";
 	};
